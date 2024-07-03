@@ -1,16 +1,25 @@
-SAR PREPROCESSING
+# Image Analysis Pipeline Project
 
-The overriden_auxil and the overriden_util python files are the tweaked source codes of the pyroSAR package that helped us perform the preprocessing for our specific use case. The sar.py file imports these utility files.
-Please run the sar.py file using 'python3 sar.py' and the download will immediately begin.
+## Overview
 
+This project focuses on creating a comprehensive image analysis pipeline using Apache Airflow. It consists of two main components:
+1. **SAR Image Analysis**: Using PyroSAR and other libraries to retrieve Synthetic Aperture Radar (SAR) images from satellites and calculate soil moisture content.
+2. **Landsat 8 Image Analysis**: Retrieving images from the Landsat 8 satellite and calculating the Normalized Difference Water Index (NDWI).
 
+## Project Structure
 
-NORMALIZED DIFFERENCE WATER INDEX
+### SAR Preprocessing
 
-The NDWI.ipynb consists of the code that was used to calculate the NDWI and to crop the Area of Interest.
+The SAR preprocessing pipeline retrieves SAR images from satellites and processes them to calculate soil moisture content.
 
+#### Files:
+- **`overriden_auxil.py` and `overriden_util.py`**: Custom versions of the PyroSAR package source code, modified for our specific use case.
+- **`sar.py`**: Script that imports the utility files and handles SAR image retrieval and processing.
 
+#### How to Run:
+1. Ensure you have the necessary dependencies installed.
+2. Execute the SAR preprocessing script:
+   ```bash
+   python3 sar.py
 
-AIRFLOW INGESTION PIPELINE
-
-This has all the scripts and dags that are used to automate the SAR data ingestion process. Create the necessary output folders as written in the code while running the dag.
+   
