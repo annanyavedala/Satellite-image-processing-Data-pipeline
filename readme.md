@@ -43,9 +43,13 @@ Create the necessary output folders as specified in the code.
 Deploy the DAGs and scripts to your Airflow instance.
 
  ### Prerequisites
+ 
 Python 3.x
+
 Apache Airflow
+
 Jupyter Notebook or Jupyter Lab
+
 PyroSAR and other required Python libraries
 
    
