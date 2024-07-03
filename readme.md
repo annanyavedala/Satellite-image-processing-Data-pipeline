@@ -24,7 +24,7 @@ The SAR preprocessing pipeline retrieves SAR images from satellites and processe
 
 This will start the download and preprocessing immediately.
 
-#### Normalized Difference Water Index (NDWI)
+### Normalized Difference Water Index (NDWI)
 This part of the project involves retrieving Landsat 8 satellite images and calculating the NDWI for the Area of Interest (AOI).
 
 File:
@@ -34,7 +34,7 @@ How to Use:
 Open the NDWI.ipynb file in Jupyter Notebook or Jupyter Lab.
 Execute the cells to perform the NDWI calculation.
 
-#### Airflow Ingestion Pipeline
+### Airflow Ingestion Pipeline
 Automates the SAR data ingestion process using Apache Airflow. Includes all necessary scripts and Directed Acyclic Graphs (DAGs) to manage the workflow.
 
 Setup:
@@ -42,7 +42,7 @@ Ensure Apache Airflow is installed and configured.
 Create the necessary output folders as specified in the code.
 Deploy the DAGs and scripts to your Airflow instance.
 
- #### Prerequisites
+ ### Prerequisites
 Python 3.x
 Apache Airflow
 Jupyter Notebook or Jupyter Lab
